@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_t"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:drawable/dialog_holo_dark_frame"
+    android:gravity="center_horizontal|center"
+    android:orientation="horizontal">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/item_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="false"
+        android:adjustViewBounds="false"
+        android:baselineAlignBottom="false"
+        android:cropToPadding="false"
+        android:src="@drawable/com_facebook_profile_picture_blank_portrait" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark"
+        android:elevation="17dp"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="New Text"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:typeface="serif"
+        android:visibility="gone" />
+
+    <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+        android:id="@+id/dot_progress_mini"
+        android:layout_width="128dp"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@android:drawable/dark_header"
+        custom:amount="5"
+        custom:animationDirection="left"
+        custom:duration="@android:integer/config_mediumAnimTime"
+        custom:endColor="@color/white"
+        custom:startColor="@color/light_blue_A400"/>
+</RelativeLayout>
+

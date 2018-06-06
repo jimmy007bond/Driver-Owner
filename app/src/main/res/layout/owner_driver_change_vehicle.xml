@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first_pager"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/blue_grey_900"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTop1"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:background="@android:drawable/screen_background_dark_transparent">
+
+        <ImageView
+            android:id="@+id/imagecar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/mus" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/layoutTop1"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="true"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/change_vehicle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/blue_grey_900"
+                android:clickable="true"
+                android:fontFamily="@font/roboto_light"
+                android:text="Change vehicle"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/top"
+                android:clickable="true"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Ok"
+                android:textColor="@color/blue_grey_900"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_driver"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="false"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="5dp"
+        android:adjustViewBounds="false"
+        android:background="@android:drawable/picture_frame"
+        android:scaleType="fitCenter"
+        android:src="@drawable/com_facebook_profile_picture_blank_square" />
+
+    <ProgressBar
+        android:id="@+id/progressBardel"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/profile_driver"
+        android:layout_marginStart="84dp"
+        android:layout_toEndOf="@+id/profile_driver"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

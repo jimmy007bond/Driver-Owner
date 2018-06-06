@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="@android:color/transparent"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:background="@android:drawable/dark_header"
+        android:gravity="center_horizontal|center"
+        android:text="Add images "
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <com.geekworkx.oho.Adapters.HeightWrappingViewPager
+        android:id="@+id/v12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:background="@android:drawable/screen_background_dark_transparent">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue_grey_900"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textR"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="0.5"
+                android:textColorHint="@color/top"
+                android:visibility="visible">
+
+                <EditText
+
+                    android:id="@+id/textRc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Registration No"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/bigrc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textR"
+                android:layout_margin="10dp"
+                android:minHeight="100dp"
+                android:src="@drawable/noimageicon" />
+
+            <Button
+                android:id="@+id/upload2"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:drawableEnd="@android:drawable/ic_menu_send"
+                android:ems="20"
+                android:text="Upload"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue_grey_900"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textI"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.5"
+                android:textColorHint="@color/top"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/textInsurance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:ems="10"
+                    android:gravity="center_horizontal"
+                    android:hint="Insurance No"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/biginsurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textI"
+                android:minHeight="100dp"
+                android:src="@drawable/noimageicon" />
+
+            <Button
+                android:id="@+id/upload3"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentBottom="true"
+                android:background="@color/common_google_signin_btn_text_dark_focused"
+                android:drawableEnd="@android:drawable/ic_menu_send"
+                android:ems="12"
+                android:text="Upload"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+    </com.geekworkx.oho.Adapters.HeightWrappingViewPager>
+</LinearLayout>

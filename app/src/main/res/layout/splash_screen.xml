@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+
+    android:id="@+id/cor_home_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_grey_900"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/drawable" />
+
+    <TextView
+        android:id="@+id/gtcor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="167dp"
+        android:layout_marginStart="6dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:gravity="center_horizontal"
+        android:text='Getting coordinates...'
+        android:visibility="gone" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="false"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical|center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blankscreen"
+                android:gravity="center_vertical|center_horizontal|center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="122dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/buttono"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:background="@color/blue_grey_900"
+                        android:drawableEnd="@android:drawable/ic_menu_send"
+                        android:drawableStart="@mipmap/ic_man"
+                        android:fontFamily="@font/roboto_medium"
+                        android:minHeight="74dp"
+                        android:padding="5dp"
+                        android:text="OWNER LOGIN"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textColor="@color/top"
+                        android:textStyle="bold"
+                        android:tooltipText="Owner of the vehicle" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/buttond"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/blue_grey_900"
+                        android:drawableLeft="@mipmap/ic_taxi"
+                        android:drawableRight="@android:drawable/ic_menu_send"
+                        android:fontFamily="@font/roboto_medium"
+                        android:minHeight="74dp"
+                        android:padding="5dp"
+                        android:text="DRIVER LOGIN"
+                        android:textAlignment="center"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                        android:textColor="@color/top"
+                        android:textStyle="bold"
+                        android:tooltipText="Owner of the vehicle" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

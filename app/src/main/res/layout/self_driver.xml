@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center_horizontal|center"
+    android:background="@color/blue_grey_900"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/blue_grey_800"
+        android:ems="15"
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal|center"
+        android:inputType="textPersonName"
+        android:text="Choose an option below"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_grey_900"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/buttonself"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.33"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:breakStrategy="high_quality"
+            android:drawableEnd="@drawable/owner"
+            android:ems="12"
+            android:text="Driving my own car"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttondriver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.33"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:drawableEnd="@drawable/driver"
+            android:ems="12"
+            android:text="Apponiting a driver"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.33"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:drawableEnd="@mipmap/ic_list"
+            android:ems="12"
+            android:text="Select from list"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

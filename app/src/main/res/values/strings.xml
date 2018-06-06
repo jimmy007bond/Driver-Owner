@@ -1,0 +1,17 @@
+
+<resources>
+    <string name="app_name">Driver and Owner</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="startrace">Start Ride</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="pick_image_intent_text">Pick Image</string>
+    <string name="select">Select</string>
+    <string name="action_notification">Notification</string>
+
+</resources>
