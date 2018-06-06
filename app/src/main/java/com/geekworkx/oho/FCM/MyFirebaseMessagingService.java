@@ -7,7 +7,7 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import com.geekworkx.oho.Adapters.GetRide;
-import com.geekworkx.oho.Splash_screen.Splash_screen;
+import com.geekworkx.oho.Activities.Splash_screen;
 import com.geekworkx.oho.URLS.Config_URL;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;

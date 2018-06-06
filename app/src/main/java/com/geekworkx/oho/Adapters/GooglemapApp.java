@@ -67,7 +67,7 @@ import com.geekworkx.oho.Main_activity.PrefManager;
 import com.geekworkx.oho.Model.Book;
 import com.geekworkx.oho.R;
 import com.geekworkx.oho.Services.SensorService;
-import com.geekworkx.oho.Splash_screen.Splash_screen;
+import com.geekworkx.oho.Activities.Splash_screen;
 import com.geekworkx.oho.URLS.Config_URL;
 import com.geekworkx.oho.helper.Album;
 import com.geekworkx.oho.helper.HttpHandler;

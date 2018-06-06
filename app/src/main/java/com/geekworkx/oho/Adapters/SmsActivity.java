@@ -35,7 +35,7 @@ import com.geekworkx.oho.ConnectionDetector;
 import com.geekworkx.oho.Crop.ImagePicker;
 import com.geekworkx.oho.Main_activity.PrefManager;
 import com.geekworkx.oho.R;
-import com.geekworkx.oho.Splash_screen.Splash_screen;
+import com.geekworkx.oho.Activities.Splash_screen;
 import com.geekworkx.oho.URLS.Config_URL;
 
 import java.io.ByteArrayOutputStream;
